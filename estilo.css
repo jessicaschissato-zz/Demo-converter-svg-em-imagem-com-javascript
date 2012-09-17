@@ -1,0 +1,95 @@
+* { margin: 0; padding: 0; border: 0 }
+body { background: url(bg.png) }
+legend { display: none }
+
+@font-face {
+    font-family: 'Casper';
+    src: url('fonts/Casper.eot');
+    src: url('fonts/Casper.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Casper.woff') format('woff'),
+         url('fonts/Casper.ttf') format('truetype'),
+         url('fonts/Casper.svg#casperregular') format('svg');
+}
+
+h1 { 
+	font: 35px 'Casper', Arial; 
+	text-align: center; 
+	margin: 2% 0 3%; 
+	color: #555;
+	text-shadow: 1px 2px #bbb;
+	text-transform: uppercase;
+}
+
+#apresentacao { 
+	width: 960px; 
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+/* === Esquerda === */
+.esquerda {
+	float: left;
+    width: 240px;
+}
+.esquerda #svg {
+	background: rgba(255, 255, 255, 0.35);
+    border: 10px solid #CCC;
+	height: 200px;
+    padding: 10px;
+    width: 200px;
+}
+
+/* === Direita === */
+.direita {
+	float: right;
+	width: 240px;
+}
+.direita .fundo {
+	background: rgba(255, 255, 255, 0.35);
+    border: 10px solid #CCC;	
+	height: 200px;
+    padding: 10px;
+    width: 200px;
+}
+
+.esquerda h2, .direita h2 {
+	background: #CCC;
+	color: #444;
+    display: block;
+    font: 24px 'Casper',Arial;
+    padding-top: 10px;
+    text-align: center;
+    text-shadow: 1px 2px #AAA;
+    width: 240px;
+}
+
+/* === Botão === */
+.botao {
+	width: 480px;
+	float: left;
+	margin-top: 120px;
+}
+input[type="button"] {
+	background: #2679A5; 
+	border-radius: 6px;
+    color: #FFF;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font: 20px 'Casper',Arial;
+    padding: 7.5px 15px;
+    width: 250px;
+
+    -webkit-transition: background .2s ease-in;
+    -moz-transition: background .2s ease-in;
+    -ms-transition: background .2s ease-in;
+    -o-transition: background .2s ease-in;
+    transition: background .2s ease-in;
+}
+
+input[type="button"]:hover { background: #12587C }
+
+.autores { background: #e5e3df; bottom: 0; border-radius: 5px 0 0 0; padding: 5px 10px; position: fixed; right: 0; width: 357px }
+.autores p { color: #333; font: 13px Tahoma, Arial }
+.autores p a { color: #333;	text-decoration: none }
+.autores p a:hover { text-decoration: underline }
